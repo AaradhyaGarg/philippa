@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Philippa is an independent founder, event host, and spatial leader designing meaningful public experiences and brand ecosystems."
+    />
+    <title>Philippa | Independent Founder • Event Host • Spatial Leader</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/dist/typed.umd.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="noise"></div>
+
+      <header class="topbar">
+        <a href="#top" class="brand" aria-label="Philippa home">
+          <span class="brand-mark">P</span>
+          <span class="brand-text">Philippa</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#work">Work</a>
+          <a href="#insights">Insights</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </header>
+
+      <main id="top">
+        <section class="hero section">
+          <div class="status-bar" data-reveal>
+            <div class="status-pill">
+              <span class="status-dot-wrap">
+                <span class="status-dot-ring"></span>
+                <span class="status-dot"></span>
+              </span>
+              <span class="status-copy">Independent Founder • Event Host • Spatial Leader</span>
+            </div>
+            <span id="utcTime" class="utc-time" aria-live="polite">[--:--:-- UTC]</span>
+          </div>
+
+          <div class="hero-grid">
+            <div class="hero-copy" data-reveal>
+              <p class="eyebrow">Creative direction for experiences that move people</p>
+              <h1>
+                I shape spaces where
+                <span class="typed-wrap">
+                  <span class="typed" id="typedText"></span>
+                </span>
+                becomes culture.
+              </h1>
+              <p class="lede">
+                I’m Philippa — a strategic founder, curator of live experiences, and spatial storyteller helping brands,
+                communities, and cultural teams design memorable public moments that feel human, elevated, and future-facing.
+              </p>
+
+              <div class="cta-row">
+                <a class="button primary" href="#contact">Book a conversation</a>
+                <a class="button secondary" href="#work">View selected work</a>
+              </div>
+
+              <ul class="hero-stats" aria-label="Key metrics">
+                <li>
+                  <strong>12+</strong>
+                  <span>Years building live experiences</span>
+                </li>
+                <li>
+                  <strong>30+</strong>
+                  <span>Events and launches led</span>
+                </li>
+                <li>
+                  <strong>9</strong>
+                  <span>Global partnerships</span>
+                </li>
+              </ul>
+            </div>
+
+            <aside class="hero-panel" data-reveal>
+              <div class="panel-header">
+                <span class="badge">Now booking Q4</span>
+                <span class="tiny-label">Portfolio / 2026</span>
+              </div>
+
+              <div class="portrait-card">
+                <div class="portrait-orb"></div>
+                <div class="portrait-meta">
+                  <p class="meta-label">Current focus</p>
+                  <h2>Founding immersive experiences for ambitious brands.</h2>
+                </div>
+              </div>
+
+              <div class="mini-grid">
+                <article>
+                  <span class="mini-label">Core thesis</span>
+                  <p>Meaningful experiences are built where narrative, design, and community converge.</p>
+                </article>
+                <article>
+                  <span class="mini-label">Approach</span>
+                  <p>Strategy + atmosphere + human connection.</p>
+                </article>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section id="about" class="section about">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">About</p>
+            <h2>Building connection into the physical and digital world.</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-copy" data-reveal>
+              <p>
+                I work at the intersection of culture, hospitality, storytelling, and operational excellence.
+                My work is rooted in helping founders, creative teams, and institutions turn a vision into a world people want to step inside.
+              </p>
+              <p>
+                From intimate gatherings to large-scale public programs, I design frameworks that balance vision with execution,
+                creating experiences that feel polished, alive, and unmistakably memorable.
+              </p>
+            </div>
+
+            <div class="about-list" data-reveal>
+              <div class="list-card">
+                <span class="list-tag">What I do</span>
+                <ul>
+                  <li>Brand experiences and launch strategy</li>
+                  <li>Event design and guest experience direction</li>
+                  <li>Community programming and activation concepts</li>
+                  <li>Spatial storytelling for cultural and editorial brands</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="services" class="section services">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Services</p>
+            <h2>From strategic concept to final applause.</h2>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card" data-reveal>
+              <span class="card-index">01</span>
+              <h3>Experience Strategy</h3>
+              <p>Positioning, narrative development, audience mapping, and the strategic blueprint behind transformative moments.</p>
+            </article>
+
+            <article class="service-card" data-reveal>
+              <span class="card-index">02</span>
+              <h3>Event Direction</h3>
+              <p>Concepting and guiding live programs, branded launches, speaker flows, and guest journeys that feel seamless and elevated.</p>
+            </article>
+
+            <article class="service-card" data-reveal>
+              <span class="card-index">03</span>
+              <h3>Spatial Curation</h3>
+              <p>Designing the atmosphere, movement, and emotional rhythm of spaces that invite attention, belonging, and trust.</p>
+            </article>
+
+            <article class="service-card" data-reveal>
+              <span class="card-index">04</span>
+              <h3>Brand Activation</h3>
+              <p>Launching ideas into tangible experiences across communities, partnerships, editorial touchpoints, and digital channels.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="work" class="section work">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Selected work</p>
+            <h2>Moments that linger long after the lights dim.</h2>
+          </div>
+
+          <div class="case-grid">
+            <article class="case-card featured" data-reveal>
+              <div class="case-topline">
+                <span>Launch experience</span>
+                <span>2025</span>
+              </div>
+              <h3>Northline House</h3>
+              <p>A civic-facing gathering platform that merged design, public programming, and founder storytelling into a high-trust, high-energy launch sequence.</p>
+              <ul>
+                <li>Brand narrative architecture</li>
+                <li>Visitor journey design</li>
+                <li>Speaker and host orchestration</li>
+              </ul>
+            </article>
+
+            <article class="case-card" data-reveal>
+              <div class="case-topline">
+                <span>Immersive series</span>
+                <span>2024</span>
+              </div>
+              <h3>Signal &amp; Bloom</h3>
+              <p>An intimate series exploring the future of hospitality, flow, and community through curated showcase events.</p>
+            </article>
+
+            <article class="case-card" data-reveal>
+              <div class="case-topline">
+                <span>Culture initiative</span>
+                <span>2023</span>
+              </div>
+              <h3>Open Forum</h3>
+              <p>A conversational platform bridging founders, artists, and city leaders through thoughtful live curation.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="insights" class="section insights">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Guiding principles</p>
+            <h2>What I believe makes experiences unforgettable.</h2>
+          </div>
+
+          <div class="principles-grid">
+            <article class="principle-card" data-reveal>
+              <span>01</span>
+              <h3>Clarity over noise</h3>
+              <p>Every layer of the experience should feel intentional, calm, and easy to inhabit.</p>
+            </article>
+            <article class="principle-card" data-reveal>
+              <span>02</span>
+              <h3>Emotion as strategy</h3>
+              <p>People remember how an idea made them feel far longer than they remember the details.</p>
+            </article>
+            <article class="principle-card" data-reveal>
+              <span>03</span>
+              <h3>Design for belonging</h3>
+              <p>Great spaces welcome different types of people, ideas, and energy without losing a point of view.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section testimonial-wrap" data-reveal>
+          <div class="quote-card">
+            <p class="quote-mark">“</p>
+            <blockquote>
+              Philippa has an extraordinary ability to turn a vague ambition into a clear, elevated experience people immediately trust and remember.
+            </blockquote>
+            <div class="quote-meta">
+              <strong>Amelia Hart</strong>
+              <span>Founder, Northline</span>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer id="contact" class="footer section">
+        <div class="footer-panel" data-reveal>
+          <div>
+            <p class="eyebrow">Let’s build what’s next</p>
+            <h2>Bring your next idea into focus.</h2>
+          </div>
+
+          <div class="footer-actions">
+            <a href="mailto:hello@philippa.studio" class="button primary">hello@philippa.studio</a>
+            <div class="socials" aria-label="Social links">
+              <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
