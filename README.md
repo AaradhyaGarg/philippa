@@ -1,26 +1,63 @@
-# Philippa Portfolio
+document.addEventListener("DOMContentLoaded", () => {
+  const typedTarget = document.getElementById("typedText");
+  const utcTimeEl = document.getElementById("utcTime");
+  const revealEls = document.querySelectorAll("[data-reveal]");
+  const nav = document.querySelector(".site-nav");
+  const menuToggle = document.querySelector(".menu-toggle");
 
-A polished, one-page portfolio website for Philippa — an independent founder, event host, and spatial leader.
+  if (typedTarget && typeof Typed !== "undefined") {
+    new Typed(typedTarget, {
+      strings: [
+        "geospatial intelligence",
+        "technical strategy",
+        "creative storytelling",
+        "community leadership",
+        "human-centered innovation"
+      ],
+      typeSpeed: 42,
+      backSpeed: 22,
+      backDelay: 1400,
+      startDelay: 350,
+      loop: true,
+      smartBackspace: true,
+      showCursor: true,
+      cursorChar: "|",
+    });
+  }
 
-## Quick start
+  const updateUtc = () => {
+    const now = new Date();
+    const utc = now.toISOString().substring(11, 19);
+    if (utcTimeEl) utcTimeEl.textContent = `[${utc} UTC]`;
+  };
 
-Open `index.html` in a browser, or serve the folder locally with a static file server:
+  updateUtc();
+  setInterval(updateUtc, 1000);
 
-```bash
-python3 -m http.server 8000
-```
+  if (typeof gsap !== "undefined") {
+    gsap.fromTo(
+      revealEls,
+      { opacity: 0, y: 18 },
+      { opacity: 1, y: 0, duration: 0.9, stagger: 0.08, ease: "power2.out", delay: 0.08 }
+    );
+  } else {
+    revealEls.forEach((el) => {
+      el.style.opacity = "1";
+      el.style.transform = "translateY(0)";
+    });
+  }
 
-Then visit `http://localhost:8000`.
+  if (menuToggle && nav) {
+    menuToggle.addEventListener("click", () => {
+      const isOpen = nav.classList.toggle("is-open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+    });
 
-## Included
-
-- Responsive portfolio layout
-- Dark editorial aesthetic with brass accents
-- Typed headline animation
-- Scroll reveal motion
-- UTC live clock
-- Contact section and social links
-
-## Customize
-
-Update the names, services, and contact details in `index.html` and adjust colors and spacing in `styles.css`.
+    nav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+});
